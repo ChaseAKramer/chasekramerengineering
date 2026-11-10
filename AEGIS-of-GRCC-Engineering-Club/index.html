@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AEGIS | GRCC Engineering Society</title>
+<meta name="description" content="AEGIS, the Applied Engineering and Guided Innovation Society at Grand Rapids Community College.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0b0b0b;--ink-2:#161616;--paper:#f4f2ee;--line:#d9d4ca;--muted:#5c6670;--accent:#ff6a00;--accent-ink:#c24f00;--white:#fff}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .mono{font-family:"JetBrains Mono",monospace;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+  nav{position:sticky;top:0;z-index:10;background:rgba(11,11,11,.95);color:var(--white)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .brand{font-family:Michroma,sans-serif;font-size:.95rem;text-decoration:none;letter-spacing:.08em}
+  .brand span{color:var(--accent)}
+  nav a.back{text-decoration:none;font-size:.9rem;opacity:.85}
+  nav a.back:hover{opacity:1;color:var(--accent)}
+  .hero{background:var(--ink);color:var(--white);position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,106,0,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,106,0,.08) 1px,transparent 1px);background-size:48px 48px}
+  .hero .wrap{position:relative;padding:96px 24px 88px}
+  .hero .mono{color:var(--accent)}
+  .hero h1{font-family:Michroma,sans-serif;font-weight:400;font-size:clamp(3rem,10vw,6rem);letter-spacing:.12em;margin:14px 0 6px}
+  .hero h2{font-weight:500;font-size:1.15rem;color:#c9c9c9;margin-bottom:22px}
+  .hero p{max-width:660px;color:#d6d6d6;font-size:1.08rem}
+  section{padding:80px 0;border-bottom:1px solid var(--line)}
+  .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:36px}
+  .sec-head .mono{color:var(--accent-ink)}
+  h3.title{font-family:Michroma,sans-serif;font-weight:400;font-size:clamp(1.4rem,3vw,1.9rem)}
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  @media (max-width:820px){.pillars{grid-template-columns:1fr}}
+  .pillar{background:var(--white);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:6px;padding:24px}
+  .pillar h4{font-size:1.1rem;margin-bottom:8px}
+  .list{display:grid;gap:0}
+  .item{display:grid;grid-template-columns:180px 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--line)}
+  .item:first-child{border-top:none;padding-top:0}
+  @media (max-width:720px){.item{grid-template-columns:1fr;gap:4px}}
+  .item .when{color:var(--muted)}
+  .item h4{font-size:1.08rem;margin-bottom:4px}
+  .ph{aspect-ratio:16/10;background:linear-gradient(rgba(0,0,0,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.06) 1px,transparent 1px),#e9e6df;background-size:20px 20px;display:flex;align-items:center;justify-content:center;color:var(--muted);border:1px solid var(--line);border-radius:6px}
+  .ph img{width:100%;height:100%;object-fit:cover;border-radius:6px}
+  .photos{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  @media (max-width:720px){.photos{grid-template-columns:1fr}}
+  .people{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  @media (max-width:720px){.people{grid-template-columns:1fr}}
+  .person{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:24px}
+  .person .mono{color:var(--accent-ink);display:block;margin-bottom:6px}
+  .person h4{font-size:1.15rem}
+  .join{background:var(--ink);color:var(--white);border-bottom:none}
+  .join h3.title{color:var(--white)}
+  .join .mono{color:var(--accent)}
+  .join p{max-width:640px;color:#d6d6d6;margin-bottom:24px}
+  .btn{display:inline-block;padding:12px 20px;border-radius:4px;text-decoration:none;font-weight:600;background:var(--accent);color:var(--white);margin-right:10px;margin-bottom:10px}
+  .btn.ghost{background:transparent;border:1.5px solid var(--accent)}
+  footer{background:var(--ink);color:#777;font-size:.85rem;padding:24px 0 40px}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="./">AE<span>G</span>IS</a>
+  <a class="back" href="../">← Chase Kramer</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="mono">Grand Rapids Community College</div>
+  <h1>AEGIS</h1>
+  <h2>Applied Engineering and Guided Innovation Society</h2>
+  <p>We connect community college engineering students with industry through hands-on projects, professional development, and visits to West Michigan manufacturers.</p>
+</div></header>
+
+<section><div class="wrap">
+  <div class="sec-head"><span class="mono">01</span><h3 class="title">What we do</h3></div>
+  <div class="pillars">
+    <div class="pillar"><h4>Build real parts</h4><p>Members design, print, and test projects they can put in their own portfolios.</p></div>
+    <div class="pillar"><h4>See industry up close</h4><p>Plant and office tours with local manufacturers and engineering firms.</p></div>
+    <div class="pillar"><h4>Get career ready</h4><p>Resume and portfolio help, networking, and introductions to employers.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><span class="mono">02</span><h3 class="title">Projects &amp; visits</h3></div>
+  <div class="list">
+    <div class="item"><div class="when mono">Fall 2026</div><div><h4>Drawer slide ball retainer &amp; loader</h4><p>A 3D-printed ball retainer for a drawer slide, plus a loading fixture. Members are comparing loader designs, with a demo planned for December.</p></div></div>
+    <div class="item"><div class="when mono">Oct 2026</div><div><h4>Competition Engineering, Inc. · Marne, MI</h4><p>Tour of a tool and die shop.</p></div></div>
+    <div class="item"><div class="when mono">Fall 2026</div><div><h4>Fishbeck · Grand Rapids, MI</h4><p>Visit to an engineering and architecture consulting firm.</p></div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><span class="mono">03</span><h3 class="title">Photos</h3></div>
+  <div class="photos">
+    <div class="ph"><!-- <img src="../assets/aegis-1.jpg" alt=""> -->Club photo</div>
+    <div class="ph"><!-- <img src="../assets/aegis-2.jpg" alt=""> -->Club photo</div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><span class="mono">04</span><h3 class="title">Leadership</h3></div>
+  <div class="people">
+    <div class="person"><span class="mono">Faculty Advisor</span><h4>Dr. Brandon Berg</h4><p>Grand Rapids Community College</p></div>
+    <div class="person"><span class="mono">Founder &amp; President</span><h4>Chase Kramer</h4><p>Mechanical and Manufacturing Engineering student at GRCC, transferring to Grand Valley State University for mechanical engineering. Former Production Supervisor and manufacturing engineering intern.</p></div>
+  </div>
+</div></section>
+
+<section class="join"><div class="wrap">
+  <div class="sec-head"><span class="mono">05</span><h3 class="title">Join or host us</h3></div>
+  <p>GRCC students: reach out to get involved. Companies: we'd love to visit your facility or work with you on a student project.</p>
+  <a class="btn" href="mailto:chase.kramermi@gmail.com">Email AEGIS</a>
+  <a class="btn ghost" href="https://www.linkedin.com/in/chase-kramer">LinkedIn</a>
+  <p style="margin-top:14px;font-size:.9rem;color:#999">chase.kramermi@gmail.com</p>
+</div></section>
+
+<footer><div class="wrap">© 2026 AEGIS · Grand Rapids Community College</div></footer>
+</body>
+</html>
