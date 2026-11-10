@@ -79,6 +79,11 @@
   .ph.duo figure{position:relative;background:#fff;display:flex;align-items:center;justify-content:center;margin:0;min-height:260px}
   .ph.duo img{object-fit:contain;padding:28px 6px 6px;width:100%;height:100%}
   .ph.duo figcaption{position:absolute;top:10px;left:12px;color:var(--accent-ink)}
+  .ph.stack{display:grid;grid-template-rows:1fr auto;gap:1px;background:var(--line);padding:0;align-items:stretch}
+  .ph.stack figure{position:relative;margin:0;overflow:hidden;background:#fff}
+  .ph.stack figure:first-child img{width:100%;height:100%;object-fit:cover}
+  .ph.stack figure:last-child img{width:100%;height:auto;display:block}
+  .ph.stack figcaption{position:absolute;top:10px;left:12px;background:rgba(255,255,255,.85);padding:2px 8px;border-radius:3px;color:var(--accent-ink)}
   .sep{border:none;border-top:1px solid var(--line);margin:22px 0}
   .team{margin-top:24px;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#fff}
   .team img{width:100%;display:block}
@@ -173,7 +178,7 @@
     <div class="projects">
 
       <article class="card feature">
-        <div class="ph"><img src="assets/ball-retainer.jpg" alt="SolidWorks render of the hopper-fed, stepper-driven ball loader for a drawer slide retainer"></div>
+        <div class="ph stack"><figure><img src="assets/ball-retainer.jpg" alt="SolidWorks render of the hopper-fed, stepper-driven ball loader for a drawer slide retainer"><figcaption class="mono">Loader · CAD</figcaption></figure><figure><img src="assets/retainer-print.jpg" alt="3D-printed black ball retainer"><figcaption class="mono">Retainer · printed</figcaption></figure></div>
         <div class="body">
           <span class="tag mono">Product design · AEGIS · Oct 2026 to present</span>
           <h3>Drawer Slide Ball Retainer &amp; Loader</h3>
