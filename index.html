@@ -71,6 +71,14 @@
   .card.feature .ph{aspect-ratio:auto;min-height:300px;border-bottom:none;border-right:1px solid var(--line)}
   .ph img{width:100%;height:100%;object-fit:cover;display:block}
   .card .body{padding:24px 26px 28px}
+  .ph.duo{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);padding:0;align-items:stretch}
+  .ph.duo figure{position:relative;background:#fff;display:flex;align-items:center;justify-content:center;margin:0;min-height:260px}
+  .ph.duo img{object-fit:contain;padding:28px 6px 6px;width:100%;height:100%}
+  .ph.duo figcaption{position:absolute;top:10px;left:12px;color:var(--accent-ink)}
+  .sep{border:none;border-top:1px solid var(--line);margin:22px 0}
+  .team{margin-top:24px;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#fff}
+  .team img{width:100%;display:block}
+  .team figcaption{padding:10px 14px;font-size:.85rem;color:var(--muted)}
   .tag{display:inline-block;color:var(--accent-ink);margin-bottom:10px}
   .card dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin-top:14px;font-size:.95rem}
   .card dt{font-weight:600;color:var(--muted)}
@@ -144,7 +152,7 @@
     <div class="stats">
       <div class="stat"><b>3 yrs</b><span>Production Supervisor</span></div>
       <div class="stat"><b>2</b><span>Manufacturing engineering internships</span></div>
-      <div class="stat"><b>3.93</b><span>GPA at GRCC</span></div>
+      <div class="stat"><b>3.97</b><span>GPA at GRCC</span></div>
       <div class="stat"><b>CSWA</b><span>Certified SOLIDWORKS Associate</span></div>
     </div>
   </div>
@@ -156,57 +164,56 @@
     <div class="projects">
 
       <article class="card feature">
-        <div class="ph"><!-- Replace with: <img src="assets/ball-retainer.jpg" alt="3D-printed drawer slide ball retainer"> -->Photo / CAD render</div>
+        <div class="ph"><img src="assets/ball-retainer.jpg" alt="SolidWorks render of the hopper-fed, stepper-driven ball loader for a drawer slide retainer"></div>
         <div class="body">
-          <span class="tag mono">Product design · AEGIS · In progress</span>
+          <span class="tag mono">Product design · AEGIS · Oct 2026 to present</span>
           <h3>Drawer Slide Ball Retainer &amp; Loader</h3>
-          <p>Designed a 3D-printed ball retainer for a drawer slide (drawing AEGIS-001) and a fixture that loads the balls without a spring to hold them.</p>
+          <p>A problem I saw at Knape &amp; Vogt: loading ball bearings into drawer slide retainers by hand. I reverse-engineered the retainer (AEGIS-001) and am leading a club team designing a loader for it.</p>
           <dl>
-            <dt>Problem</dt><dd>The retainer has no spring, so the balls need to stay put during loading and assembly.</dd>
-            <dt>Approach</dt><dd>Rotary wheels on both sides load the balls, then the retainer slides against a guide wall that holds them in place.</dd>
-            <dt>Status</dt><dd>Prototype build and testing. Demo planned for December 2026.</dd>
+            <dt>Retainer</dt><dd>Measured the original with calipers, modeled it in SolidWorks, and released a dimensioned drawing to ASME Y14.5 for a 3D-printed ABS version holding 36 &Oslash;4.5 mm chrome steel balls.</dd>
+            <dt>Rev B</dt><dd>Added retention hooks and increased wall thickness after the first release.</dd>
+            <dt>Loader</dt><dd>Hopper-fed, stepper-driven concept that indexes balls into the retainer. Demo planned for December 2026.</dd>
           </dl>
-          <div class="chips"><span class="chip">SolidWorks</span><span class="chip">GD&amp;T</span><span class="chip">FDM printing</span><span class="chip">Fixture design</span></div>
+          <div class="chips"><span class="chip">SolidWorks</span><span class="chip">ASME Y14.5</span><span class="chip">Reverse engineering</span><span class="chip">3D printing</span><span class="chip">Mechanism design</span></div>
+        </div>
+      </article>
+
+      <article class="card feature">
+        <div class="ph duo"><figure><img src="assets/challenge-before.jpg" alt="Workstation before redesign"><figcaption class="mono">Before</figcaption></figure><figure><img src="assets/challenge-after.jpg" alt="Workstation after redesign with hoppers and tilt decks"><figcaption class="mono">After</figcaption></figure></div>
+        <div class="body">
+          <span class="tag mono">Challenge Manufacturing · 2025</span>
+          <h3>Assembly Workstation Redesign</h3>
+          <p>Redesigned a high-volume automotive assembly station to cut wasted operator movement. Replaced a problem inventory setup with component hoppers and tilt decks so parts come to the operator.</p>
+          <dl>
+            <dt>Steps</dt><dd>6 fewer steps per cycle, over 11,500 per shift (about 1.5 miles of walking a day).</dd>
+            <dt>Output</dt><dd>About 20% higher station productivity with a 10-week payback.</dd>
+            <dt>People</dt><dd>Freed operator time for other work without adding headcount.</dd>
+          </dl>
+          <div class="chips"><span class="chip">SolidWorks</span><span class="chip">Lean</span><span class="chip">Ergonomics</span><span class="chip">Material flow</span></div>
         </div>
       </article>
 
       <article class="card">
-        <div class="ph"><!-- <img src="assets/handrail.jpg" alt=""> -->Photo / CAD render</div>
+        <div class="ph"><img src="assets/handrail.jpg" alt="Yellow steel handrail installed on shipping dock stairs"></div>
         <div class="body">
           <span class="tag mono">Knape &amp; Vogt · 2026</span>
-          <h3>Shipping Dock Handrail Redesign</h3>
-          <p>Designed a replacement handrail in SolidWorks to OSHA 1910.29 using ASTM A500 Grade B square tube, and cost-justified building it in house instead of using an outside contractor.</p>
-          <div class="chips"><span class="chip">SolidWorks</span><span class="chip">OSHA 1910.29</span><span class="chip">Cost analysis</span></div>
+          <h3>Shipping Dock Handrail Replacement</h3>
+          <p>Designed a replacement handrail in SolidWorks to meet OSHA 1910.29, optimized ASTM A500 Grade B stock lengths to cut waste, and coordinated in-house fabrication. Saved $9,000 compared with a contracted install.</p>
+          <div class="chips"><span class="chip">SolidWorks</span><span class="chip">OSHA 1910.29</span><span class="chip">Structural steel</span><span class="chip">Cost analysis</span></div>
         </div>
       </article>
 
       <article class="card">
-        <div class="ph"><!-- <img src="assets/assembly-station.jpg" alt=""> -->Photo</div>
         <div class="body">
           <span class="tag mono">Knape &amp; Vogt · 2026</span>
-          <h3>Assembly Station Downtime Fix</h3>
-          <p>Found the cause of recurring stoppages at an assembly substation, replaced aging Balluff sensors, and remade the part-nest tooling. Recovered 18 minutes of uptime per shift at low cost.</p>
-          <div class="chips"><span class="chip">Root cause</span><span class="chip">Sensors</span><span class="chip">Tooling</span></div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="ph"><!-- <img src="assets/tote-stand.jpg" alt=""> -->CAD render</div>
-        <div class="body">
+          <h3>Assembly Substation Downtime Fix</h3>
+          <p>Traced an 18 minute per shift bottleneck to aging sensors and worn part-nest tooling. Replaced the sensors and remade the nests for about $950 in parts.</p>
+          <div class="chips"><span class="chip">Root cause analysis</span><span class="chip">Sensors</span><span class="chip">Tooling</span></div>
+          <hr class="sep">
           <span class="tag mono">Knape &amp; Vogt · 2026</span>
-          <h3>Ergonomic Tote Stands &amp; Workstations</h3>
-          <p>Part of a safety and fatigue-reduction project: designed tote stands, tables, carts, and trays in SolidWorks with a rack stability check, and wrote the standardized work, changeover, and LOTO documents.</p>
-          <div class="chips"><span class="chip">SolidWorks</span><span class="chip">Ergonomics</span><span class="chip">Standard work</span></div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="ph"><!-- <img src="assets/drone-bracket.jpg" alt=""> -->CAD render</div>
-        <div class="body">
-          <span class="tag mono">Personal · DFM</span>
-          <h3>Drone Motor Arm Bracket Redesign</h3>
-          <p>Reverse-engineered a drone motor arm bracket and redesigned it for manufacturability, with a cost and benefit comparison against the original.</p>
-          <div class="chips"><span class="chip">Reverse engineering</span><span class="chip">DFM</span><span class="chip">SolidWorks</span></div>
+          <h3>Safety &amp; Fatigue Reduction</h3>
+          <p>Led a $30,000 initiative: wrote startup, shutdown, changeover, LOTO, and standard work instructions, and designed tote stands and ergonomic workstations in SolidWorks.</p>
+          <div class="chips"><span class="chip">Standard work</span><span class="chip">LOTO</span><span class="chip">Ergonomics</span></div>
         </div>
       </article>
 
@@ -220,48 +227,56 @@
     <div class="timeline">
 
       <div class="job">
-        <div class="when mono">2026</div>
+        <div class="when mono">May to Aug 2026</div>
         <div>
           <h3>Manufacturing Engineering Intern</h3>
-          <div class="org">Knape &amp; Vogt · Grand Rapids, MI</div>
+          <div class="org">Knape &amp; Vogt Manufacturing · Grand Rapids, MI</div>
           <ul>
-            <li>Designed flat stock and bent parts for an Amada punch/laser combination machine within its turret tooling limits.</li>
-            <li>Planned and ran a 6S Kaizen event and wrote changeover instructions for coil-fed roll-form press lines.</li>
-            <li>Updated CAD layouts for facilities totaling over 1M sq ft, including fire-protection drawings.</li>
-            <li>Coordinated a compressed-air leak survey with Consumers Energy that found and fixed 20 leaks.</li>
+            <li>Fixed an 18 minute per shift downtime bottleneck on an assembly substation by replacing aging sensors and remaking part-nest tooling.</li>
+            <li>Designed an OSHA 1910.29 shipping dock handrail for in-house fabrication, saving $9,000 versus a contracted install.</li>
+            <li>Led a $30,000 safety and fatigue-reduction initiative covering standard work, LOTO, and ergonomic workstation design.</li>
+            <li>Mapped 34 forklift routes in a DraftSight spaghetti diagram the team used to plan a floor layout change.</li>
+            <li>Designed flat and bent sheet metal parts for an Amada punch/laser combination machine within its turret tooling limits.</li>
           </ul>
         </div>
       </div>
 
       <div class="job">
-        <div class="when mono">2026</div>
+        <div class="when mono">Mar to Jun 2026</div>
         <div>
-          <h3>Contract Engineering</h3>
-          <div class="org">Waste2Nano</div>
+          <h3>Mechanical Engineer (Contract)</h3>
+          <div class="org">Waste2Nano · Remote</div>
           <ul>
-            <li>Engineering support for a trailer-mounted waste heat recovery and wastewater treatment system.</li>
+            <li>Thermal and hydraulic analysis and Fusion 360 modeling for a trailer-mounted waste heat recovery system.</li>
+            <li>Built the component BOM and selected pumps, piping, and electrical hardware.</li>
           </ul>
         </div>
       </div>
 
       <div class="job">
-        <div class="when mono">Summer 2025</div>
+        <div class="when mono">Jun to Aug 2025</div>
         <div>
           <h3>Manufacturing Engineering Intern</h3>
-          <div class="org">Challenge Manufacturing</div>
+          <div class="org">Challenge Manufacturing · Walker, MI</div>
           <ul>
-            <li>Plant layout and floor measurement work.</li>
+            <li>Redesigned an assembly workstation with hoppers and tilt decks, raising productivity about 20%.</li>
+            <li>Worked with controls engineers to improve PLC sequences, reducing downtime and improving throughput.</li>
+            <li>Analyzed robotic weld cell cycle-time data and presented bottleneck fixes to engineering leadership.</li>
+            <li>Added Red Rabbit error-proofing and 5S checks to daily operations.</li>
           </ul>
         </div>
       </div>
 
       <div class="job">
-        <div class="when mono">3 years</div>
+        <div class="when mono">Jan 2021 to Sep 2024</div>
         <div>
           <h3>Production Supervisor</h3>
-          <div class="org">Challenge Manufacturing</div>
+          <div class="org">Challenge Manufacturing · Walker, MI</div>
           <ul>
-            <li>Ran daily production and worked with manufacturing and quality engineers to solve problems on the line.</li>
+            <li>Ran production on automated SPR weld cells with Corporate Engineering, covering part quality and process validation.</li>
+            <li>Built 5S part presentation systems and visual controls that cut search time on the line.</li>
+            <li>Worked with maintenance on electrical and mechanical faults, using root-cause analysis to prevent repeat downtime.</li>
+            <li>Tracked scrap trends and put corrective actions in place to improve first-pass yield.</li>
           </ul>
         </div>
       </div>
@@ -279,13 +294,14 @@
         <p>I want to work in product engineering and design things that last, not things built to wear out. Long term, I'm interested in defense and aerospace.</p>
         <div class="edu">
           <div><b>B.S. Mechanical Engineering</b><small>Grand Valley State University · transferring after summer 2027</small></div>
-          <div><b>A.S. Mechanical &amp; Manufacturing Engineering</b><small>Grand Rapids Community College · expected May 2027 · GPA 3.93</small></div>
+          <div><b>A.S. Engineering</b><small>Grand Rapids Community College · expected May 2027 · GPA 3.97</small></div>
         </div>
+        <figure class="team"><img src="assets/kv-team.jpg" alt="Chase with the Knape &amp; Vogt engineering team"><figcaption>With the Knape &amp; Vogt engineering team, summer 2026</figcaption></figure>
       </div>
       <div class="skills">
-        <div><h3>CAD &amp; Design</h3><div class="chips"><span class="chip">SolidWorks (CSWA)</span><span class="chip">DraftSight</span><span class="chip">GD&amp;T</span><span class="chip">Technical drawings</span><span class="chip">3D printing</span></div></div>
+        <div><h3>CAD &amp; Design</h3><div class="chips"><span class="chip">SolidWorks (CSWA)</span><span class="chip">DraftSight</span><span class="chip">AutoCAD</span><span class="chip">Fusion 360</span><span class="chip">GD&amp;T</span><span class="chip">Technical drawings</span><span class="chip">3D printing</span></div></div>
         <div><h3>Manufacturing</h3><div class="chips"><span class="chip">Lean / 6S</span><span class="chip">Kaizen</span><span class="chip">Standard work</span><span class="chip">LOTO</span><span class="chip">Plant layout</span><span class="chip">Sheet metal / punch-laser</span><span class="chip">Time studies</span></div></div>
-        <div><h3>Analysis</h3><div class="chips"><span class="chip">Excel</span><span class="chip">Cost justification</span><span class="chip">Spaghetti diagrams</span><span class="chip">Downtime analysis</span></div></div>
+        <div><h3>Controls &amp; Analysis</h3><div class="chips"><span class="chip">PLC troubleshooting (Allen-Bradley)</span><span class="chip">Python</span><span class="chip">SPC</span><span class="chip">Tolerance analysis</span><span class="chip">Excel</span><span class="chip">Cost justification</span><span class="chip">Spaghetti diagrams</span><span class="chip">Downtime analysis</span></div></div>
         <div><h3>Hands-on</h3><div class="chips"><span class="chip">Equipment repair</span><span class="chip">Woodworking / cabinetry</span><span class="chip">Construction</span></div></div>
       </div>
     </div>
