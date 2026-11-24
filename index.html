@@ -45,7 +45,9 @@
   .hero h1{font-family:Michroma,sans-serif;font-weight:400;font-size:clamp(2.2rem,6vw,4rem);line-height:1.1;margin:18px 0 20px;letter-spacing:.01em}
   .hero p.lead{max-width:640px;font-size:1.15rem;color:#c9d1d9}
   .seeking{margin-top:18px;color:#e6ebf0;font-weight:500;font-size:.98rem;display:flex;align-items:center;gap:10px}
-  .seeking .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none;box-shadow:0 0 0 4px rgba(232,104,28,.2)}
+  .seeking .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none;animation:pulse 1.8s ease-in-out infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(232,104,28,.75);opacity:1}50%{opacity:.55}70%{box-shadow:0 0 0 9px rgba(232,104,28,0)}100%{box-shadow:0 0 0 0 rgba(232,104,28,0);opacity:1}}
+  @media (prefers-reduced-motion:reduce){.seeking .dot{animation:none;box-shadow:0 0 0 4px rgba(232,104,28,.2)}}
   .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
   .btn{display:inline-block;padding:12px 20px;border-radius:4px;text-decoration:none;font-weight:600;font-size:.95rem;border:1.5px solid var(--accent)}
   .btn.primary{background:var(--accent);color:var(--white)}
