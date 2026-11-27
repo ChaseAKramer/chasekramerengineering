@@ -88,6 +88,11 @@
   .ph.stack figure:first-child img{width:100%;height:100%;object-fit:cover}
   .ph.stack figure:last-child img{width:100%;height:auto;display:block}
   .ph.stack figcaption{position:absolute;top:10px;left:12px;background:rgba(255,255,255,.85);padding:2px 8px;border-radius:3px;color:var(--accent-ink)}
+  .card.feature .drawing{grid-column:1/-1;margin:0;border-top:1px solid var(--line);background:#fff}
+  .card.feature .drawing img{width:100%;display:block;padding:14px 14px 0}
+  .card.feature .drawing figcaption{display:flex;justify-content:space-between;align-items:center;padding:10px 18px 14px;font-size:.9rem}
+  .card.feature .drawing figcaption .mono{color:var(--accent-ink)}
+  .card.feature .drawing figcaption a{color:var(--accent-ink);font-weight:600;text-decoration:none}
   .sep{border:none;border-top:1px solid var(--line);margin:22px 0}
   .team{margin-top:24px;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#fff}
   .team img{width:100%;display:block}
@@ -190,12 +195,13 @@
           <p>I reverse-engineered a drawer slide ball retainer and am leading a club team designing a machine to load it.</p>
           <dl>
             <dt>Problem</dt><dd>A drawer slide&rsquo;s ball retainer holds the bearings that make it glide. Seating 36 of them quickly and reliably is a real design challenge.</dd>
-            <dt>Concept</dt><dd>Measured the original with calipers, modeled it in SolidWorks, and released drawing AEGIS-001 to ASME Y14.5 for a 3D-printed ABS retainer holding 36 &Oslash;4.5 mm chrome steel balls. Paired it with a hopper-fed, stepper-driven loader that indexes balls into place.</dd>
-            <dt>Iteration</dt><dd><b>Rev B:</b> added retention hooks and thicker walls after the first release.</dd>
+            <dt>Concept</dt><dd>Measured the original with calipers, modeled it in SolidWorks, and released drawing AEGIS-001 to ASME Y14.5 for a 3D-printed PLA retainer holding 36 &Oslash;4.5 mm chrome steel balls. Paired it with a hopper-fed, stepper-driven loader that indexes balls into place.</dd>
+            <dt>Iteration</dt><dd><b>Rev B:</b> added retention hooks and thicker walls. <b>Rev C:</b> replaced the hooks with a semi-circle bearing rest.</dd>
             <dt>Result</dt><dd>Printed retainer in hand. Loader demo planned for December 2026.</dd>
           </dl>
           <div class="chips"><span class="chip">SolidWorks</span><span class="chip">ASME Y14.5</span><span class="chip">Reverse engineering</span><span class="chip">3D printing</span><span class="chip">Mechanism design</span></div>
         </div>
+        <figure class="drawing"><a href="assets/AEGIS-001-Ball-Retainer.pdf"><img src="assets/retainer-drawing.png" alt="Engineering drawing AEGIS-001, ball retainer, Rev C"></a><figcaption><span class="mono">Drawing AEGIS-001 · Rev C</span><a href="assets/AEGIS-001-Ball-Retainer.pdf">Open full PDF &rarr;</a></figcaption></figure>
       </article>
 
       <article class="card feature">
